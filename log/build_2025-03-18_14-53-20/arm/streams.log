@@ -1,0 +1,44 @@
+[0.016s] Invoking command in '/home/ros/urdf_ws/build/arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ros2_ws86/install/test_turtle:/home/ros/ros2_ws86/install/test_pkg_with_node:/home/ros/ros2_ws86/install/test_pkg:/home/ros/ros2_ws86/install/service_set_pen:/home/ros/ros2_ws86/install/learning_tf_urdf:/home/ros/ros2_ws86/install/eval_8b:/home/ros/ros2_ws86/install/comprehensive_eval:/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake --build /home/ros/urdf_ws/build/arm -- -j6 -l6
+[0.475s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.540s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.747s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.748s] -- Added test 'lint_cmake' to check CMake code style
+[1.749s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.752s] -- Added test 'xmllint' to check XML markup files
+[1.760s] -- Configuring done
+[1.822s] -- Generating done
+[1.825s] -- Build files have been written to: /home/ros/urdf_ws/build/arm
+[1.853s] Invoked command in '/home/ros/urdf_ws/build/arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ros2_ws86/install/test_turtle:/home/ros/ros2_ws86/install/test_pkg_with_node:/home/ros/ros2_ws86/install/test_pkg:/home/ros/ros2_ws86/install/service_set_pen:/home/ros/ros2_ws86/install/learning_tf_urdf:/home/ros/ros2_ws86/install/eval_8b:/home/ros/ros2_ws86/install/comprehensive_eval:/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake --build /home/ros/urdf_ws/build/arm -- -j6 -l6
+[2.031s] Invoking command in '/home/ros/urdf_ws/build/arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ros2_ws86/install/test_turtle:/home/ros/ros2_ws86/install/test_pkg_with_node:/home/ros/ros2_ws86/install/test_pkg:/home/ros/ros2_ws86/install/service_set_pen:/home/ros/ros2_ws86/install/learning_tf_urdf:/home/ros/ros2_ws86/install/eval_8b:/home/ros/ros2_ws86/install/comprehensive_eval:/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake --install /home/ros/urdf_ws/build/arm
+[2.039s] -- Install configuration: ""
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/meshes
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/meshes/Gripper.stl
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/meshes/Link_1.stl
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/meshes/Gripper_Base.stl
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/meshes/Link_3.stl
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/meshes/Right_Finger.stl
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/meshes/Left_Finger.stl
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/meshes/Base.stl
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/meshes/Shoulder.stl
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/meshes/Link_2.stl
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/urdf
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/urdf/arm2.urdf.xacro
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/urdf/arm.urdf.xacro
+[2.039s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/launch
+[2.039s] -- Installing: /home/ros/urdf_ws/install/arm/share/arm/launch/gazebo_servo.launch.py
+[2.045s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/ament_index/resource_index/package_run_dependencies/arm
+[2.045s] -- Installing: /home/ros/urdf_ws/install/arm/share/ament_index/resource_index/parent_prefix_path/arm
+[2.045s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/environment/ament_prefix_path.sh
+[2.046s] -- Installing: /home/ros/urdf_ws/install/arm/share/arm/environment/ament_prefix_path.dsv
+[2.046s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/environment/path.sh
+[2.046s] -- Installing: /home/ros/urdf_ws/install/arm/share/arm/environment/path.dsv
+[2.046s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/local_setup.bash
+[2.046s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/local_setup.sh
+[2.046s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/local_setup.zsh
+[2.046s] -- Installing: /home/ros/urdf_ws/install/arm/share/arm/local_setup.dsv
+[2.046s] -- Installing: /home/ros/urdf_ws/install/arm/share/arm/package.dsv
+[2.046s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/ament_index/resource_index/packages/arm
+[2.046s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/cmake/armConfig.cmake
+[2.046s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/cmake/armConfig-version.cmake
+[2.046s] -- Up-to-date: /home/ros/urdf_ws/install/arm/share/arm/package.xml
+[2.055s] Invoked command in '/home/ros/urdf_ws/build/arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ros2_ws86/install/test_turtle:/home/ros/ros2_ws86/install/test_pkg_with_node:/home/ros/ros2_ws86/install/test_pkg:/home/ros/ros2_ws86/install/service_set_pen:/home/ros/ros2_ws86/install/learning_tf_urdf:/home/ros/ros2_ws86/install/eval_8b:/home/ros/ros2_ws86/install/comprehensive_eval:/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake --install /home/ros/urdf_ws/build/arm

@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Arm">
+    <xacro:macro name="default_inertial" params="mass">
+        <inertial>
+            <mass value="${mass}"/>
+            <inertia ixx="1e-3" ixy="0" ixz="0" iyy="1e-3" iyz="0" izz="1e-3"/>
+        </inertial>
+    </xacro:macro>
+
+    <link name="base_link">
+        <xacro:default_inertial mass="1.0" />
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Base.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+            <material name="Grey">
+                <color rgba="0.3 0.3 0.3 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Base.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+        </collision>
+
+    </link>
+    <link name="shoulder">
+        <xacro:default_inertial mass="0.9" />
+        <visual>
+            <origin xyz="0.06 0.015 -0.6" rpy="0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Shoulder.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+            <material name="Blue">
+                <color rgba="0.1 0.1 0.4 1.0"/>
+            </material>            
+        </visual>
+        <collision>
+            <origin xyz="0.06 0.015 -0.6" rpy="0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Shoulder.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="Shoulder" type="revolute">
+        <origin xyz="-0.06 -0.015 0.6" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="shoulder"/>
+        <axis xyz="0.0 0.0 1.0"/>
+        <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+    </joint>
+
+
+
+    <link name="link_1">
+        <xacro:default_inertial mass="0.8" />
+        <visual>
+            <origin xyz="0.0 -0.1 -0.95" rpy="0.0 0.0 0.77"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Link_1.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+            <material name="Grey">
+                <color rgba="0.3 0.3 0.3 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 -0.1 -0.95" rpy="0.0 0.0 0.77"/>            
+            <geometry>
+                <mesh filename="package://arm/meshes/Link_1.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+        </collision>        
+    </link>    
+
+    <joint name="Link1_Joint" type="revolute">
+        <origin xyz="0.1 0.1 0.37" rpy="0.0 0.0 -0.77"/>
+        <parent link="shoulder"/>
+        <child link="link_1"/>
+        <axis xyz="1.0 0.0 0.0"/>
+        <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+    </joint>
+
+    <link name="link_2">
+        <xacro:default_inertial mass="0.7" />
+        <visual>
+            <origin xyz="0.0 0.137 -2.15" rpy="0.0 0.0 0.77"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Link_2.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+            <material name="Blue">
+                <color rgba="0.1 0.1 0.4 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.137 -2.15" rpy="0.0 0.0 0.77"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Link_2.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="Link2_Joint" type="revolute">
+        <origin xyz="0.0 -0.25 1.2" rpy="0.0 0.0 0.0"/>
+        <parent link="link_1"/>
+        <child link="link_2"/>
+        <axis xyz="1.0 0.0 0.0"/>
+        <limit lower="0" upper="3.14" effort="1.0" velocity="1.0"/>
+    </joint>
+
+    <link name="link_3">
+        <xacro:default_inertial mass="0.6" />
+        <visual>
+            <origin xyz="0.59 -0.61 -2" rpy="-0.1 -0.2 0.77"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Link_3.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+            <material name="Grey">
+                <color rgba="0.3 0.3 0.3 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.59 -0.61 -2" rpy="-0.1 -0.2 0.77"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Link_3.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="Link3_Joint" type="revolute">
+        <origin xyz="-0.15 0.9 -0.1" rpy="0.0 0.0 0.0"/>
+        <parent link="link_2"/>
+        <child link="link_3"/>
+        <axis xyz="0.0 1.0 0.0"/>
+        <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+    </joint>
+
+    <link name="gripper_base">
+        <xacro:default_inertial mass="0.4" />
+        <visual>
+            <origin xyz="1.44 -0.5 -2.505" rpy="-0.2 0.0 3"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Gripper_Base.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+            <material name="Grey">
+                <color rgba="0.3 0.3 0.3 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="1.44 -0.5 -2.505" rpy="-0.2 0.0 3"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Gripper_Base.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="Gripper_Joint" type="revolute">
+        <origin xyz="0.19 0.3 0.075" rpy="0.0 0.0 -1.57"/>
+        <parent link="link_3"/>
+        <child link="gripper_base"/>
+        <axis xyz="0.0 1.0 0.0"/>
+        <limit lower="-0.77" upper="2.34" effort="1.0" velocity="1.0"/>
+    </joint>
+
+    <link name="right_finger">
+        <xacro:default_inertial mass="0.2" />
+        <visual>
+            <origin xyz="-0.2 -0.79 -2.8" rpy="0.0 -0.77 3.14"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Right_Finger.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.1 0.1 0.4 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="-0.2 -0.79 -2.8" rpy="0.0 -0.77 3.14"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Right_Finger.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="right" type="revolute">
+        <origin xyz="-0.29 0.09 -0.25" rpy="0.0 -0.77 0.0"/>
+        <parent link="gripper_base"/>
+        <child link="right_finger"/>
+        <axis xyz="0.0 0.0 1.0"/>
+        <limit lower="-1.00" upper="0" effort="0.0" velocity="0.0"/>
+    </joint>
+
+    <link name="left_finger">
+        <xacro:default_inertial mass="0.2" />
+        <visual>
+            <origin xyz="-0.26 -0.5 -2.8" rpy="0.0 -0.77 3.14"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Left_Finger.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+            <material name="Blue">
+                <color rgba="0.1 0.1 0.4 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="-0.26 -0.5 -2.8" rpy="0.0 -0.77 3.14"/>
+            <geometry>
+                <mesh filename="package://arm/meshes/Left_Finger.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="left" type="revolute">
+        <origin xyz="-0.29 -0.19 -0.25" rpy="0.0 -0.77 0.0"/>
+        <parent link="gripper_base"/>
+        <child link="left_finger"/>
+        <axis xyz="0.0 0.0 1.0"/>
+        <mimic joint ="right" multiplier ="-1.0"></mimic>
+        <limit lower="0" upper="1" effort="0.0" velocity="0.0"/>
+    </joint>
+
+    
+
+</robot>

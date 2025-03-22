@@ -1,0 +1,28 @@
+[0.040s] Invoking command in '/home/ros/urdf_ws/build/model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ros2_ws86/install/test_turtle:/home/ros/ros2_ws86/install/test_pkg_with_node:/home/ros/ros2_ws86/install/test_pkg:/home/ros/ros2_ws86/install/service_set_pen:/home/ros/ros2_ws86/install/learning_tf_urdf:/home/ros/ros2_ws86/install/eval_8b:/home/ros/ros2_ws86/install/comprehensive_eval:/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake /home/ros/urdf_ws/src/arm -DCMAKE_INSTALL_PREFIX=/home/ros/urdf_ws/install/model
+[0.180s] -- The C compiler identification is GNU 11.4.0
+[0.230s] -- The CXX compiler identification is GNU 11.4.0
+[0.250s] -- Detecting C compiler ABI info
+[0.353s] -- Detecting C compiler ABI info - done
+[0.370s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.370s] -- Detecting C compile features
+[0.370s] -- Detecting C compile features - done
+[0.372s] -- Detecting CXX compiler ABI info
+[0.477s] -- Detecting CXX compiler ABI info - done
+[0.482s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.483s] -- Detecting CXX compile features
+[0.484s] -- Detecting CXX compile features - done
+[0.485s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.617s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.705s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.765s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[0.765s]   ament_package_xml() package name 'model' in '/package.xml' does not match
+[0.765s]   current PROJECT_NAME 'arm'.  You must call project() with the same package
+[0.765s]   name before.
+[0.765s] Call Stack (most recent call first):
+[0.766s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.766s]   CMakeLists.txt:28 (ament_lint_auto_find_test_dependencies)
+[0.766s] 
+[0.766s] [0m
+[0.766s] -- Configuring incomplete, errors occurred!
+[0.766s] See also "/home/ros/urdf_ws/build/model/CMakeFiles/CMakeOutput.log".
+[0.769s] Invoked command in '/home/ros/urdf_ws/build/model' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ros2_ws86/install/test_turtle:/home/ros/ros2_ws86/install/test_pkg_with_node:/home/ros/ros2_ws86/install/test_pkg:/home/ros/ros2_ws86/install/service_set_pen:/home/ros/ros2_ws86/install/learning_tf_urdf:/home/ros/ros2_ws86/install/eval_8b:/home/ros/ros2_ws86/install/comprehensive_eval:/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake /home/ros/urdf_ws/src/arm -DCMAKE_INSTALL_PREFIX=/home/ros/urdf_ws/install/model
