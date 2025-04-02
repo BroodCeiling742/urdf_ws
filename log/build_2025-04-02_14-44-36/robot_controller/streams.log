@@ -1,0 +1,24 @@
+[0.146s] Invoking command in '/home/ros/urdf_ws/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ros2_ws86/install/test_turtle:/home/ros/ros2_ws86/install/test_pkg_with_node:/home/ros/ros2_ws86/install/test_pkg:/home/ros/ros2_ws86/install/service_set_pen:/home/ros/ros2_ws86/install/learning_tf_urdf:/home/ros/ros2_ws86/install/eval_8b:/home/ros/ros2_ws86/install/comprehensive_eval:/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake --build /home/ros/urdf_ws/build/robot_controller -- -j6 -l6
+[1.483s] Invoked command in '/home/ros/urdf_ws/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ros2_ws86/install/test_turtle:/home/ros/ros2_ws86/install/test_pkg_with_node:/home/ros/ros2_ws86/install/test_pkg:/home/ros/ros2_ws86/install/service_set_pen:/home/ros/ros2_ws86/install/learning_tf_urdf:/home/ros/ros2_ws86/install/eval_8b:/home/ros/ros2_ws86/install/comprehensive_eval:/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake --build /home/ros/urdf_ws/build/robot_controller -- -j6 -l6
+[1.652s] Invoking command in '/home/ros/urdf_ws/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ros2_ws86/install/test_turtle:/home/ros/ros2_ws86/install/test_pkg_with_node:/home/ros/ros2_ws86/install/test_pkg:/home/ros/ros2_ws86/install/service_set_pen:/home/ros/ros2_ws86/install/learning_tf_urdf:/home/ros/ros2_ws86/install/eval_8b:/home/ros/ros2_ws86/install/comprehensive_eval:/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake --install /home/ros/urdf_ws/build/robot_controller
+[1.718s] -- Install configuration: ""
+[1.860s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/$(PROJECT_NAME)/config
+[1.860s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/$(PROJECT_NAME)/config/robot_controller.yaml
+[1.860s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/$(PROJECT_NAME)/launch
+[1.860s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/$(PROJECT_NAME)/launch/controller.launch.py
+[1.860s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/ament_index/resource_index/package_run_dependencies/robot_controller
+[1.860s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/ament_index/resource_index/parent_prefix_path/robot_controller
+[1.860s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.sh
+[1.860s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.dsv
+[1.860s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/environment/path.sh
+[1.860s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/environment/path.dsv
+[1.860s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/local_setup.bash
+[1.860s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/local_setup.sh
+[1.861s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/local_setup.zsh
+[1.861s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/local_setup.dsv
+[1.861s] -- Installing: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/package.dsv
+[1.861s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/ament_index/resource_index/packages/robot_controller
+[1.861s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig.cmake
+[1.861s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig-version.cmake
+[1.861s] -- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/package.xml
+[2.064s] Invoked command in '/home/ros/urdf_ws/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ros2_ws86/install/test_turtle:/home/ros/ros2_ws86/install/test_pkg_with_node:/home/ros/ros2_ws86/install/test_pkg:/home/ros/ros2_ws86/install/service_set_pen:/home/ros/ros2_ws86/install/learning_tf_urdf:/home/ros/ros2_ws86/install/eval_8b:/home/ros/ros2_ws86/install/comprehensive_eval:/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake --install /home/ros/urdf_ws/build/robot_controller

@@ -1,0 +1,40 @@
+controller_manager:
+  ros_parameters:
+
+    update_rate: 10
+
+    arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    gripper_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointTrajectoryController
+
+
+arm_controller:
+  ros_parameters:
+    joints:
+
+    - Shoulder
+    - Link1_Joint
+    - Link2_Joint
+    - Link3_Joint
+    - Gripper_Joint
+
+  command_interfaces:
+    - position
+
+  state_interfaces:
+    - position
+
+  open_loop_control: true
+  allow_integration_in_goal_trajectories: true
+
+gripper_controller:
+  ros_parameters:
+    joints:
+      - right
+
+    interface_name: position

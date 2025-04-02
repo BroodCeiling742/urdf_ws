@@ -1,0 +1,17 @@
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/config/robot_controller.yaml
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/launch/controller.launch.py
+/home/ros/urdf_ws/install/robot_controller/share/ament_index/resource_index/package_run_dependencies/robot_controller
+/home/ros/urdf_ws/install/robot_controller/share/ament_index/resource_index/parent_prefix_path/robot_controller
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.sh
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.dsv
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/environment/path.sh
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/environment/path.dsv
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/local_setup.bash
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/local_setup.sh
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/local_setup.zsh
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/local_setup.dsv
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/package.dsv
+/home/ros/urdf_ws/install/robot_controller/share/ament_index/resource_index/packages/robot_controller
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig.cmake
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig-version.cmake
+/home/ros/urdf_ws/install/robot_controller/share/robot_controller/package.xml

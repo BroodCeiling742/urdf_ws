@@ -1,0 +1,20 @@
+-- Install configuration: ""
+-- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/$(PROJECT_NAME)/config
+-- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/$(PROJECT_NAME)/config/robot_controller.yaml
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/$(PROJECT_NAME)/launch
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/$(PROJECT_NAME)/launch/controller.launch.py
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/ament_index/resource_index/package_run_dependencies/robot_controller
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/ament_index/resource_index/parent_prefix_path/robot_controller
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.sh
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.dsv
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/environment/path.sh
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/environment/path.dsv
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/local_setup.bash
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/local_setup.sh
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/local_setup.zsh
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/local_setup.dsv
+-- Up-to-date: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/package.dsv
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/ament_index/resource_index/packages/robot_controller
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig.cmake
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig-version.cmake
+-- Installing: /home/ros/urdf_ws/install/robot_controller/share/robot_controller/package.xml

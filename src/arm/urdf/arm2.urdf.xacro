@@ -8,6 +8,12 @@
         </inertial>
     </xacro:macro>
 
+    <xacro:arg name="is_ignititon" default="true"/>
+    
+    <xacro:include filename="$(find arm)/urdf/robot_gazebo.xacro"/>
+    <xacro:include filename="$(find arm)/urdf/robot_ros2_control.xacro"/>
+    
+
     <link name="base_link">
         <xacro:default_inertial mass="1.0" />
         <visual>

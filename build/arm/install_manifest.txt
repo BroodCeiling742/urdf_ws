@@ -7,7 +7,9 @@
 /home/ros/urdf_ws/install/arm/share/arm/meshes/Base.stl
 /home/ros/urdf_ws/install/arm/share/arm/meshes/Shoulder.stl
 /home/ros/urdf_ws/install/arm/share/arm/meshes/Link_2.stl
+/home/ros/urdf_ws/install/arm/share/arm/urdf/robot_ros2_control.xacro
 /home/ros/urdf_ws/install/arm/share/arm/urdf/arm2.urdf.xacro
+/home/ros/urdf_ws/install/arm/share/arm/urdf/robot_gazebo.xacro
 /home/ros/urdf_ws/install/arm/share/arm/urdf/arm.urdf.xacro
 /home/ros/urdf_ws/install/arm/share/arm/launch/gazebo_servo.launch.py
 /home/ros/urdf_ws/install/arm/share/ament_index/resource_index/package_run_dependencies/arm
